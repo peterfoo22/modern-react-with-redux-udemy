@@ -8,6 +8,13 @@ import image3 from './images/siri.png';
 function App() {
 return (
   <div>
+    <section className="hero is-primary">
+      <div className="hero-body">
+        <p className="title">
+          <div>Personal Digital Assistant</div>
+        </p>
+      </div>
+    </section>
     <div className="container">
       <section className="section">
         <div className="columns">
@@ -19,10 +26,18 @@ return (
             />
           </div>
           <div className="column is-4">
-            <ProfileCard handle="second handle" title="second-title" image={image2} />
+            <ProfileCard
+              handle="second handle"
+              title="second-title"
+              image={image2}
+            />
           </div>
           <div className="column is-4">
-            <ProfileCard handle="third handle" title="third title" image={image3} />
+            <ProfileCard
+              handle="third handle"
+              title="third title"
+              image={image3}
+            />
           </div>
         </div>
       </section>
