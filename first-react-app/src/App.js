@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import 'bulma/css/bulma.css';
 import ProfileCard from './ProfileCard';
-import image1 from './images/alexa.png';
-import image2 from './images/cortana.png';
-import image3 from './images/siri.png';
+import alexaImage from './images/alexa.png';
+import cortanaImage from './images/cortana.png';
+import siriImage from './images/siri.png';
 
 function App() {
 return (
@@ -22,21 +22,24 @@ return (
             <ProfileCard
               handle="this is the first handle"
               title="first-title"
-              image={image1}
+              image={alexaImage}
+              description="Alexa is the first description"
             />
           </div>
           <div className="column is-4">
             <ProfileCard
               handle="second handle"
               title="second-title"
-              image={image2}
+              image={cortanaImage}
+              description="Cortana is the second description"
             />
           </div>
           <div className="column is-4">
             <ProfileCard
               handle="third handle"
               title="third title"
-              image={image3}
+              image={siriImage}
+              description="Siri is the third description"
             />
           </div>
         </div>

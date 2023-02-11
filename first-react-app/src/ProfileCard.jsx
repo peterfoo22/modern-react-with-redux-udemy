@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProfileCard = ({title, handle, image}) => {
+const ProfileCard = ({title, handle, image, description}) => {
   return (
     <div className="card">
       <div className="card-image">
@@ -13,6 +13,7 @@ const ProfileCard = ({title, handle, image}) => {
           <div>Title is {title}</div>
           <div>Handle is {handle}</div>
         </div>
+        <div className="content">{description}</div>
       </div>
     </div>
   );
